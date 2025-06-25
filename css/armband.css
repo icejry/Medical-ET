@@ -1,0 +1,133 @@
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #dbeafe;
+    text-decoration: none;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    font-weight: 500;
+    gap: 12px;
+    position: relative;
+}
+
+.nav-link i {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.nav-link:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #1e3a8a;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.main {
+    margin-left: 260px;
+    padding: 40px;
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    transition: margin-left var(--transition-speed);
+}
+
+.main h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #003366;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.rank-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+.person-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.person-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.person-card img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.person-card h3 {
+    font-size: 16px;
+    margin: 8px 0 4px;
+}
+
+.person-card p {
+    margin: 2px 0;
+    font-size: 13px;
+    color: #374151;
+}

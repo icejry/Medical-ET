@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>บทลงโทษ - EARTH TOWN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/home/logoet-1.png">
+  <link rel="stylesheet" href="css/penalty.css">
+</head>
+
+<body>
+  <audio id="clickSound" src="assets/media/click.mp3" preload="auto"></audio>
+    <div class="sidebar">
+     <ul>
+        <li>
+            <a href="index.html">
+                <img src="assets/images/home/logoet-1.png" alt="Earth Town">
+                <span class="textH">| Earth Town</span>
+            </a>
+        </li>
+      <li>
+            <a href="name.html" class="btn click-sound">
+                <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+                 <span class="text" >รายชื่อบุคลากร</span>
+            </a>
+      </li>
+      <li>
+            <a href="rules.html" class="btn click-sound">
+                <span class="icon"><i class="fa-solid fa-scroll"></i></span>
+                 <span class="text">กฎหมอ</span>
+            </a>
+      </li>
+      <li>
+            <a href="fine.html" class="btn click-sound">
+                <span class="icon"><i class="fa-solid fa-coins"></i></span>
+                <span class="text">ค่าปรับ</span>
+            </a>
+      </li>
+      <li>
+            <a href="treatment.html" class="btn click-sound">
+                <span class="icon"><i class="fas fa-heartbeat"></i></span>
+                <span class="text">ค่ารักษา</span>
+            </a>
+      </li>
+      <li>
+            <a href="armband.html" class="btn click-sound">
+                <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                <span class="text">ปลอกแขน</span>
+            </a>
+      </li>
+      <li>
+        <div class="select active">
+            <a href="penalty.html" class="btn click-sound">
+                <span class="icon"><i class="fa-solid fa-gavel"></i></span>
+                <span class="text">บทลงโทษ</span>
+            </a>
+        </div>    
+      </li>
+      <li></li>
+     </ul>
+    </div>
+
+  <div class="main">
+    <h1>บทลงโทษหน่วยแพทย์</h1>
+    <div class="warning">
+      หากมีการทำผิดซ้ำสอง จะโดน x2 / ครั้งที่ 3 จะถูกถอดยศทันที (หากเป็นนักเรียนแพทย์จะถูกปลดทันที)
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ข้อ</th>
+          <th>รายละเอียด</th>
+          <th style="text-align:center">บทลงโทษ</th>
+          <th style="text-align:center">หมายเหตุ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>หากมีการเหม่อเกิน 10 นาที แล้วไม่แจ้งในวอ หรือไม่ออกเวร หรือเหม่อแล้วไม่อยู่ในห้อง</td>
+          <td>70 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ไม่เข้าวอในขณะเข้าเวร</td>
+          <td>70 ไม้</td>
+          <td>ยกเว้น! กรณีที่แจ้งสาเหตุการไม่เข้าในวอแล้ว </td>
+        </tr>
+        <td>3</td>
+        <td>เข้าเวร ไม่ใส่ชุดหน่วยงาน </td>
+        <td>150 ไม้</td>
+        <td>ยกเว้นวัน Free day แต่ต้องตรงตามเงื่อนไขที่กำหนดให้</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>ปฏิบัติเคสทะเลาะวิวาท / สตอรี่ผิดวิธี</td>
+          <td>100 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>หากไม่มีการเตือนประชาชนหรือแก๊งที่มีการใส่หน้ากากเข้ามาในรพ.</td>
+          <td>50 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>ไปรับเคส แต่ไม่ได้กดรับเคส</td>
+          <td>50 ไม้</td>
+          <td>ยกเว้น! เคสสตอรี่หรือเคสเกาะที่มีการเด้งเคสรัวๆ</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>ทำงานดำ และ ทำงานขาวในขณะที่หมอเข้าเวรไม่ครบตามที่กำหนด</td>
+          <td>150 ไม้</td>
+          <td>ยกเว้น! หลังตี 2 - เที่ยง หรือ ช่วงกิจกรรมที่มีการอนุญาตให้ออกเวรได้</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>นำเฮลิคอปเตอร์หมอไปใช้ในประโยชน์ส่วนตัว และนอกเวลางาน </td>
+          <td>300 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>ฉีดยาให้คนไข้ ขณะที่คนไข้ใส่หน้ากากอยู่ </td>
+          <td>100 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>เปิดเคอร์ฟิว แล้วไม่ได้ปิดเคอร์ฟิว</td>
+          <td>70 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>ต่อยเล่นหรือตีเล่นในขณะเข้าเวร</td>
+          <td>120 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>ไม่ล็อคประตูห้องในโรงพยาบาล</td>
+          <td>30 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>ทะเลาะกันในหน่วยงานหรือมีปากเสียงกัน</td>
+          <td>100 ไม้</td>
+          <td>โดนทั้งสองฝ่าย</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>รับเคสแล้วไม่ลบเคส</td>
+          <td>40 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>ใช้ถ้อยคำที่ไม่เหมาะสมกับคนไข้</td>
+          <td>200 ไม้</td>
+          <td>หากโดนร้องเรียนจากคนไข้</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>ขาดการประชุม</td>
+          <td>50 ไม้</td>
+          <td>ในกรณีไม่แจ้งลา</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>ไปเรเบลโดยไม่ออกเวร</td>
+          <td>80 ไม้</td>
+          <td>หากไปธระส่วนตัวต้องออกเวรเท่านั้น</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>ห้ามเกิดเองหรือ /rv ต่อหน้าประชาชนในขณะที่ไม่ได้ปฏิบัติหน้าที่อยู่</td>
+          <td>100 ไม้</td>
+          <td>อนุโลมให้ในกรณีที่ยังรับเคสไม่เรียบร้อยเท่านั้น </td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>ปฏิบัติในจุดเคส[ปล้นคริสตัลแดง / ซ่อมไฟ / ปล้นร้านค้าแดง / ปล้นธนาคาร]ผิดวิธี</td>
+          <td>70 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>นำประชาชนไปรับเคสด้วยความไม่จำเป็น</td>
+          <td>70 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>ให้ข้อมูลที่ผิดพลาด และสร้างผลกระทบต่อบุคคลที่สาม</td>
+          <td>100 ไม้</td>
+          <td>หากไม่มั่นใจให้ปรึกษายศทึ่สูงกว่าหรืออ่านกฎให้ถี่ถ้วนก่อนตอบ</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>ไปเรเบลล่างได้ขณะเข้าเวรอยู่ ห้ามเกิน 10 นาที และไปครั้งละ 1 คน</td>
+          <td>50 ไม้</td>
+          <td>หากไม่มั่นใจว่าทันไหม แนะนำให้ออกเวรครับ</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>ใส่บิลมั่วโดยเจตนา</td>
+          <td>100 ไม้</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>ใช้เมนูการส่งตัวไปรพ.ด้วยเหตุผลส่วนตัว</td>
+          <td>300 ไม้</td>
+          <td>ยกเว้นวัน Free day</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>ทำผิดนอกเหนือจากนี้ ทำโทษขั้นต่ำ</td>
+          <td>500 ไม้</td>
+          <td>ขึ้นอยู่กับพิจารณาของผอ.แพทย์ </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer-warning">
+      หมายเหตุ : แพทย์ชำนาญการขึ้นไปโดน x2
+    </div>
+  </div>
+</body>
+<script>
+  const navLinks = document.querySelectorAll('.click-sound');
+  const sound = document.getElementById('clickSound');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      sound.currentTime = 0;
+      sound.play();
+
+      setTimeout(() => {
+        window.location.href = link.href;
+      }, 250);
+    });
+  });
+</script>
+</html>
